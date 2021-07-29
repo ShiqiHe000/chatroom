@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <script src="https://cdn.socket.io/4.0.1/socket.io.js" defer></script>
+        <script src="./js/chat.js" defer></script>
+        <title>WebSocket 101</title>
+    </head>
+    <body>
+        <div class="container my-3">
+            <div id="chat-window" class="card" style="height: 400px">
+                <div id="output" class="card-body">
+
+                </div>
+                <div id="feedback" class="card-footer text-muted "></div>
+            </div>
+            <div class="input-group my-3">
+                <input
+                    class="form-control"
+                    type="text"
+                    id="name"
+                    placeholder="From:"
+                />
+            </div>
+            <div class="input-group mb-3">
+                <input
+                    class="form-control"
+                    type="text"
+                    id="message"
+                    placeholder="Message"
+                />
+            </div>
+            <button id="send" class="btn btn-primary btn-lg">Send</button>
+        </div>
+    </body>
+</html>
